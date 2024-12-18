@@ -3,8 +3,146 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Form and Table Layout</title>
+
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+        table {
+            margin-top: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table tr {
+            background-color: rgba(128, 128, 128, 0.356);
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
+      
+    <section>
+        <form >
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="3">
+                            ADD STUDENT FORM WITH HTML TABLE LAYOUT
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Name Field -->
+                    <tr>
+                        <td>
+                            <label for="name">Name:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="name" />
+                        </td>
+                    </tr>
+
+                     <!-- Email Field -->
+                     <tr>
+                        <td>
+                            <label for="email">Email:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="email" />
+                        </td>
+                    </tr>
+
+                    <!-- Gender Field  -->
+                     <tr>
+                        <td colspan="2">Gender:</td>
+                     </tr>
+                     <tr>
+                        <td>
+                            <input type="radio" id="male" name="gender"/>
+                            <label for="male">Male</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="female" name="gender"/>
+                            <label for="female">Female</label>
+                        </td>
+                     </tr>
+
+                       <!-- Background Field  checkbox-->
+                     <tr>
+                        <td colspan="2">Background:</td>
+                     </tr>
+                     <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="background1" name="background"/>
+                            <label for="background1">Above 80 in PTE or 8 in ILETS</label>
+                        </td>
+                     </tr>
+                     <tr>
+                         <td colspan="2">
+                             <input type="checkbox" id="background2" name="background"/>
+                             <label for="background2">2 years study in Australia</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td colspan="2">
+                             <input type="checkbox" id="background3" name="background"/>
+                             <label for="background3">Age 25-33</label>
+                         </td>
+                     </tr>
+                     <tr>
+                         <td colspan="2">
+                             <input type="checkbox" id="background4" name="background"/>
+                             <label for="background4">Single</label>
+                         </td>
+                     </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="background5" name="background"/>
+                            <label for="background5">Completed NATI</label>
+                        </td>
+                    </tr>
+
+                    <!-- Education Level -->
+                     <tr>
+                        <td>
+                            <label for="education">Education Level:</label>
+                        </td>
+                        <td>
+                            <select id="education" name="education">
+                                <option value="high-school">High School</option>
+                                <option value="bachelor">Bachelor Degree</option>
+                                <option value="master">Master Degree</option>
+                        </td>
+                     </tr>
+
+                     <!-- Address field -->
+                     <tr>
+                        <td>
+                            <label for="address">Address:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="address" name="address">
+                        </td>
+                     </tr>
+
+                     <!-- Submit Button  -->
+                      <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="button" value="Submit Form">
+                        </td>
+                      </tr>
+                </tbody>
+            </table>
+        </form>
+    </section>
 </body>
 </html>
